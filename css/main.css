@@ -5,10 +5,6 @@
 /*CUSTOM STYLES*/
 
 
-body {
-    background-color: lightgrey;
-    background-image: url(src);
-}
 
 input {
     height: 2em;
@@ -27,15 +23,15 @@ input {
 .sidetabs li {
     width: 5em;
     height: 15em;
-
+    border-radius: 0px 10px 10px 0px;
 }
 
 .listtab {
-    background-color: yellow;
+    background-color: grey;
 }
 
 .baskettab {
-    background-color: green;
+    background-color: blue;
 }
 
 .buylist {
@@ -49,7 +45,7 @@ input {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: yellow;
+    background-color: grey;
 }
 
 
