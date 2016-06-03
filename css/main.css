@@ -17,12 +17,25 @@ input {
 
 .sidetabs {
     list-style-type: none;
-    width: 25%;
-    background-color: pink;
-    margin: 0;
-    padding: 0;
+    width: 22%;
     display: inline-block;
     float: right;
+    margin-top: -15%;
+
+}
+
+.sidetabs li {
+    width: 5em;
+    height: 15em;
+
+}
+
+.listtab {
+    background-color: yellow;
+}
+
+.baskettab {
+    background-color: green;
 }
 
 .buylist {
