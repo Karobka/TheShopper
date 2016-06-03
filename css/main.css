@@ -85,6 +85,9 @@ input:checked + label {
     color: #fff;
 }
 
+/** Set display to block for all these classes that are preceeded by a tab1 
+or tab2 that are checked. **/
+
 #tab1:checked ~ .content .buylist,
 #tab2:checked ~ .content .basketcontainer {
           display: block;
