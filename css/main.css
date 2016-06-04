@@ -3,7 +3,12 @@
 }
 
 /*CUSTOM STYLES*/
-
+header {
+    background-image: url("../images/DroidSkip.gif");
+    background-repeat: no-repeat;
+    height: 20em;
+    background-position: center;
+}
 
 
 input {
@@ -11,42 +16,29 @@ input {
     width: 15em;
 }
 
-.sidetabs {
-    list-style-type: none;
-    width: 22%;
-    display: inline-block;
-    float: right;
-    margin-top: -15%;
 
-}
-
-.sidetabs li {
-    width: 5em;
-    height: 15em;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.listtab {
-    background-color: grey;
-}
-
-.baskettab {
-    background-color: blue;
-}
-
-.buylist {
+li {
     list-style-type: none;
 
 }
 
-.buylist > li {
+.buylist li {
     background-color: #555555;
     border: 2px solid black;
     border-radius: 10px;
 }
 
+.basketcontainer li {
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
 .wrapper {
-    display: ;
     max-width: 45em;
     margin-left: auto;
     margin-right: auto;
@@ -54,10 +46,14 @@ input {
     background-color: grey;
 }
 
-
 i, li > p {
     display: inline-block;
-}    
+}
+
+.fa {
+    margin-right: 2em;
+    margin-left: 2em;
+}
 
 
 
@@ -68,7 +64,7 @@ i, li > p {
     padding: 20px 25px 5px;
 }
 
-input {
+#tab1, #tab2 {
     display: none;
 }
 label {
@@ -79,13 +75,22 @@ label {
 }
 label:hover {
     cursor: pointer;
+
 }
 input:checked + label {
-    background: darkgrey;
+    background: #999999;
     color: #fff;
+    box-shadow: 0 3px #27496d;
+    border-radius: 10px;
 }
 
-/** Set display to block for all these classes that are preceeded by a tab1 
+input:not(:checked) + label {
+    background: #a9a9a9;
+    box-shadow: 0 6px #27496d;
+    border-radius: 10px;
+}
+
+/** Set display to "block" for all these classes that are preceeded by a tab1 
 or tab2 that are checked. **/
 
 #tab1:checked ~ .content .buylist,
