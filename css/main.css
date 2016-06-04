@@ -3,11 +3,14 @@
 }
 
 /*CUSTOM STYLES*/
+
+
 header {
     background-image: url("../images/DroidSkip.gif");
     background-repeat: no-repeat;
-    height: 20em;
+    height: 22.6em;
     background-position: center;
+    border-radius: 10px;
 }
 
 
@@ -26,12 +29,14 @@ li {
     background-color: #555555;
     border: 2px solid black;
     border-radius: 10px;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .basketcontainer li {
     background-color: green;
     border: 2px solid black;
     border-radius: 10px;
+    margin: 0.5em 0 0.5em 0;
 }
 
 ul {
