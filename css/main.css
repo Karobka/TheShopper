@@ -19,10 +19,23 @@ input {
     width: 15em;
 }
 
+.button {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a9a9a9;
+    border: none;
+    padding: 15px 25px;
+    box-shadow: 0 6px #27496d;
+    margin-left: 2em;
+}
+
+.button:hover {
+    background-color: #d2d2d2;
+    box-shadow: 0 2px #27496d;
+}
 
 li {
     list-style-type: none;
-
 }
 
 .buylist li {
@@ -33,7 +46,7 @@ li {
 }
 
 .basketcontainer li {
-    background-color: green;
+    background-color: #9bb99b;
     border: 2px solid black;
     border-radius: 10px;
     margin: 0.5em 0 0.5em 0;
