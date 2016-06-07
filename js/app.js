@@ -1,14 +1,17 @@
 $(document).ready(function() {
 	$("#addbutton").click(function() {
-		$("input").val(function() {
-			$(".buylist").append("<li>Blah</li>");
+			$('.buylist').append('<li>' + '<i class="fa fa-check-circle-o fa-2x"></i>' + $('#iteminput').val() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
+			$('#iteminput').reset();
 			
-		});
+
 		
 	});
-	$(".fa").click(function() {
-		$(this).parent().remove();
+	$('.fa-trash').on('click', function(event) {
+		$('.fa-trash').parent().remove();
 	});
 		
 	
 });
+
+//When user clicks add button we grab the values in the input feild and
+//add them to a new li.
