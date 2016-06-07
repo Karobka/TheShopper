@@ -6,10 +6,17 @@ $(document).ready(function() {
 	$('ul').on('click', '.fa-trash', function(event) {
 		$(this).parent().remove();
 	});
-	
+	$('ul').on('click', 'fa-check-circle-o', function(event) {
+		$(this).prev('li').append('.basketlist', '<li>' + '<i class="fa fa-arrow-circle-o-left fa-2x"></i>' + $(this).val() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
+	});
+
 		
 	
 });
 
 //When user clicks add button we grab the values in the input feild and
 //add them to a new li.
+
+//When user clicks on check button we copy the text of the list item and 
+//add it to a new list item on the basket list.
+
