@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#addbutton").click(function() {
 			$('.buylist').append('<li>' + '<i class="fa fa-check-circle-o fa-2x"></i>' + $('#iteminput').val() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
-			$('#iteminput').reset();
+			$('input[type=text], textarea').val('');
 			
 
 		
