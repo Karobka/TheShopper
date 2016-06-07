@@ -91,7 +91,8 @@ label {
     font-weight: 600;
     text-align: center;
 }
-label:hover {
+label:hover,
+.fa:hover {
     cursor: pointer;
 
 }
