@@ -6,6 +6,7 @@ $(document).ready(function() {
 	$('ul').on('click', '.fa-trash', function(event) {
 		$(this).parent().remove();
 	});
+	
 		
 	
 });
