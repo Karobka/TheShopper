@@ -3,14 +3,26 @@
 }
 
 /*CUSTOM STYLES*/
+body {
+    background-color: #fbfbfb;
+    font-family: 'Open Sans', sans-serif;
 
+}
 
 header {
-    background-image: url("../images/DroidSkip.gif");
-    background-repeat: no-repeat;
-    height: 22.6em;
+    /**background-image: url("../images/DroidSkip.gif");
+    background-repeat: no-repeat;**/
+    background-color: #72bee0;
+    height: 10.6em;
     background-position: center;
-    border-radius: 10px;
+    border-radius: 3px;
+    margin: 0 0 0.5em 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0 0;
+    font-weight: 300;
 }
 
 
@@ -39,17 +51,15 @@ li {
 }
 
 .buylist li {
-    background-color: #555555;
-    border: 2px solid black;
-    border-radius: 10px;
+    background-color: #e1e1e1;
     margin: 0.5em 0 0.5em 0;
+    border: 1px solid #000000;
 }
 
 .basketcontainer li {
-    background-color: #9bb99b;
-    border: 2px solid black;
-    border-radius: 10px;
+    background-color: #d0f9f0;
     margin: 0.5em 0 0.5em 0;
+    border: 1px solid #000000;
 }
 
 ul {
@@ -61,7 +71,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: grey;
+    background-color: #FFFFFF;
 }
 
 i, li > p {
@@ -94,19 +104,16 @@ label {
 label:hover,
 .fa:hover {
     cursor: pointer;
-
 }
+
 input:checked + label {
-    background: #999999;
-    color: #fff;
-    box-shadow: 0 3px #27496d;
-    border-radius: 10px;
+    background: #e1e1e1;
+    box-shadow: 0 1px #27496d;
 }
 
 input:not(:checked) + label {
-    background: #a9a9a9;
-    box-shadow: 0 6px #27496d;
-    border-radius: 10px;
+    background: #c8c8c8;
+    box-shadow: 0 1px #27496d;
 }
 
 /** Set display to "block" for all these classes that are preceeded by a tab1 
