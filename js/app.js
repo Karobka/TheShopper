@@ -1,7 +1,8 @@
 $(document).ready(function() {
-	$("#addbutton").click(function() {
+	$('form').submit(function() {
 			$('.buylist').append('<li>' + '<i class="fa fa-check-circle-o fa-2x"></i>' + $('#iteminput').val() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
 			$('input[type=text], textarea').val('');
+			return false;
 	});
 	$('ul').on('click', '.fa-trash', function(event) {
 		$(this).parent().css('background-color', 'yellow');
