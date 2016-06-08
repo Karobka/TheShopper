@@ -11,9 +11,22 @@ $(document).ready(function() {
 		}, 1000);
 	});
 
-	$("ul").on("click", ".fa-check-circle-o", function(event) {
+	$('ul').on('click', '.fa-check-circle-o', function(event) {
 		$(this).parent().css('background-color', 'blue');
 		$('.basketlist').append('<li>' + '<i class="fa fa-arrow-circle-o-left fa-2x"></i>' + $(this).parent().text() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
+		$(this).parent().fadeOut(200);
+		setTimeout(function() {
+			$(event.target).parent().remove();
+		},1000);
+	});
+
+	$('ul').on('click', '.fa-arrow-circle-o-left', function(event) {
+		$(this).parent().css('background-color', 'grey');
+		$('.buylist').append('<li>' + '<i class="fa fa-check-circle-o fa-2x"></i>' + $(this).parent().text() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
+		$(this).parent().fadeOut(200);
+		setTimeout(function() {
+			$(event.target).parent().remove();
+		}, 1000);
 	});
 
 		
