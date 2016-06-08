@@ -5,9 +5,10 @@ $(document).ready(function() {
 	});
 	$('ul').on('click', '.fa-trash', function(event) {
 		$(this).parent().css('background-color', 'yellow');
+		$(this).parent().fadeOut(200);
 		setTimeout(function() {
-			$('.fa-trash').parent().remove();
-		}, 2000);
+			$(event.target).parent().remove();
+		}, 1000);
 	});
 
 	$("ul").on("click", ".fa-check-circle-o", function(event) {
