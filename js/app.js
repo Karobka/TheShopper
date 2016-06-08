@@ -34,9 +34,4 @@ $(document).ready(function() {
 	
 });
 
-//When user clicks add button we grab the values in the input feild and
-//add them to a new li.
-
-//When user clicks on check button we copy the text of the list item and 
-//add it to a new list item on the basket list.
 

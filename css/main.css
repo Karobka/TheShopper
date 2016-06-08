@@ -107,7 +107,7 @@ label > .fa{
 
 
 
-/** SUPER AWESOME TAB CODE **/
+/** SUPER TAB CODE **/
 
 .content > div {
     display: none;
@@ -141,7 +141,7 @@ input:not(:checked) + label {
 }
 
 /** Set display to "block" for all these classes that are preceeded by a tab1 
-or tab2 that are checked. **/
+or tab2 that is checked. **/
 
 #tab1:checked ~ .content .buylistcontainer,
 #tab2:checked ~ .content .basketcontainer {
