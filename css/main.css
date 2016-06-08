@@ -12,7 +12,7 @@ body {
 header {
     /**background-image: url("../images/DroidSkip.gif");
     background-repeat: no-repeat;**/
-    background-color: #72bee0;
+    background-color: #2651a8;
     height: 10.6em;
     background-position: center;
     border-radius: 3px;
@@ -20,7 +20,7 @@ header {
 }
 
 footer {
-    background-color: #72bee0;
+    background-color: #2651a8;
     height: 5em;
     border-radius: 3px;
 }
@@ -131,7 +131,7 @@ label:hover,
 }
 
 input:checked + label {
-    background: #72bee0;
+    background: #2651a8;
     box-shadow: 0 1px #27496d;
 }
 
