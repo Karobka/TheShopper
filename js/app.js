@@ -4,11 +4,14 @@ $(document).ready(function() {
 			$('input[type=text], textarea').val('');
 	});
 	$('ul').on('click', '.fa-trash', function(event) {
-		$(this).parent().css("background-color", "yellow");
-		$(this).parent().delay(800).remove();
+		$(this).parent().css('background-color', 'yellow');
+		setTimeout(function() {
+			$('.fa-trash').parent().remove();
+		}, 2000);
 	});
+
 	$("ul").on("click", ".fa-check-circle-o", function(event) {
-		$(this).parent().css('backgroundcolor', 'blue');
+		$(this).parent().css('background-color', 'blue');
 		$('.basketlist').append('<li>' + '<i class="fa fa-arrow-circle-o-left fa-2x"></i>' + $(this).parent().text() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
 	});
 
