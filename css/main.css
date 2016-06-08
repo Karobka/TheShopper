@@ -19,6 +19,22 @@ header {
     margin: 0 0 0.5em 0;
 }
 
+footer {
+    background-color: #72bee0;
+    height: 5em;
+    border-radius: 3px;
+}
+
+footer p {
+    font-weight: 100;
+    padding-top: 0.5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8d9093;
+}
+
 h1 {
     font-size: 4em;
     margin: 0 0;
@@ -102,6 +118,7 @@ label {
     padding: 15px 25px;
     font-weight: 600;
     text-align: center;
+    border-radius: 2px;
 }
 label:hover,
 .fa:hover {

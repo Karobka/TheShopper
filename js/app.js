@@ -5,7 +5,7 @@ $(document).ready(function() {
 			return false;
 	});
 	$('ul').on('click', '.fa-trash', function(event) {
-		$(this).parent().css('background-color', 'yellow');
+		$(this).parent().css('background-color', '#e1e1e1');
 		$(this).parent().fadeOut(200);
 		setTimeout(function() {
 			$(event.target).parent().remove();
@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	$('ul').on('click', '.fa-check-circle-o', function(event) {
-		$(this).parent().css('background-color', 'blue');
+		$(this).parent().css('background-color', '#def1ed');
 		$('.basketlist').append('<li>' + '<i class="fa fa-arrow-circle-o-left fa-2x"></i>' + $(this).parent().text() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
 		$(this).parent().fadeOut(200);
 		setTimeout(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	});
 
 	$('ul').on('click', '.fa-arrow-circle-o-left', function(event) {
-		$(this).parent().css('background-color', 'grey');
+		$(this).parent().css('background-color', '#e1e1e1');
 		$('.buylist').append('<li>' + '<i class="fa fa-check-circle-o fa-2x"></i>' + $(this).parent().text() + '<i class="fa fa-trash fa-2x"></i>' + '</li>');
 		$(this).parent().fadeOut(200);
 		setTimeout(function() {
